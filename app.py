@@ -362,7 +362,4 @@ def poll_typeform(form_id, last_token=None):
 if __name__ == '__main__':
     # For local development
     app.run(debug=True, port=5001)
-else:
-    # For production
-    app.run(host='0.0.0.0', port=int(os.environ.get('PORT', 5000)))
 
